@@ -64,7 +64,7 @@ class Mage:
         self.hitdice = 6
         self.proficiencia = ["adagas", "dardos", "fundas", "bastoes", "bestas leves"]
 
-class Monge:
+class Monk:
 
     def __init__(self, level):
         self.level = level

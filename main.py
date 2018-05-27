@@ -1,3 +1,4 @@
+from personagem import Personagem
 from raca import *
 from classe import *
 from tkinter import *
@@ -31,23 +32,28 @@ if __name__ == "__main__":
     print(p_classe.hitdice)
 
     print(racas)
-    gui = Tk()
 
-    gui.title("Py5 - Python + Tkinter")
-    gui.geometry("400x300")
-    texto = Text(gui, width=30, height=1)
-    texto.pack()
-    btn = Button(gui, text="Cumprimente", command=Cumprimente)
-    btn.pack()
+    character = Personagem("Anao", "Guerreiro")
 
-    listaRaca = StringVar()
-    comboRaca = ttk.Combobox(gui, textvariable=listaRaca, text="Racas")
-    comboRaca["values"] = racas
-    comboRaca.pack()
+    print(character.raca)
+    print(character.classe)
+    #gui = Tk()
 
-    listaClasse = StringVar()
-    comboClasse = ttk.Combobox(gui, textvariable=listaClasse, text="Classes")
-    comboClasse["values"] = classes
-    comboClasse.pack()
+    #gui.title("Py5 - Python + Tkinter")
+    #gui.geometry("400x300")
+    #texto = Text(gui, width=30, height=1)
+    #texto.pack()
+    #btn = Button(gui, text="Cumprimente", command=Cumprimente)
+    #btn.pack()
 
-    gui.mainloop()
+    #listaRaca = StringVar()
+    #comboRaca = ttk.Combobox(gui, textvariable=listaRaca, text="Racas")
+    #comboRaca["values"] = racas
+    #comboRaca.pack()
+
+    #listaClasse = StringVar()
+    #comboClasse = ttk.Combobox(gui, textvariable=listaClasse, text="Classes")
+    #comboClasse["values"] = classes
+    #comboClasse.pack()
+
+    #gui.mainloop()
