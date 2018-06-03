@@ -38,7 +38,7 @@ if __name__ == "__main__":
     print(character.raca)
     print(character.classe)
     #gui = Tk()
-
+    #
     #gui.title("Py5 - Python + Tkinter")
     #gui.geometry("400x300")
     #texto = Text(gui, width=30, height=1)
